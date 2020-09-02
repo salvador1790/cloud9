@@ -1,0 +1,66 @@
+html,body{
+    margin: 0;
+    background: linear-gradient(to bottom right, #E216DD, #35B9EF, #6022D9);
+    height: 100%;
+}
+
+#container{
+    
+    height: 720px;
+    display: flex;
+    align-items: center;
+}
+
+#loginBox{
+    background-color: white;
+    width: 1000px;
+    height: 600px;
+    border-radius: 5px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#sectionPromo{
+    height: 600px;
+    width: 600px;
+    background-image: url("./2A52C133-CEC7-4152-B964-1EB0F67BAD9A.PNG")
+}
+
+#sectionForm{
+    height: 600px;
+    font-family: 'Nunito', sans-serif;
+    width: 400px;
+}
+
+#sectionForm h1{
+    text-align: center;
+}
+
+.input{
+    display: block;
+    border: none;
+    border-bottom: 1px solid purple;
+    width: 300px;
+    outline: none;
+    margin: auto;
+}
+
+label{
+    margin-left: 50px;
+}
+
+#loginbtn{
+    display: block;
+    margin-top: 30px;
+    width: 250px;
+    background: linear-gradient(to bottom right, #E216DD, #6022D9);
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 30px auto;
+}
+
+
