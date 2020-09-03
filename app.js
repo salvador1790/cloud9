@@ -18,14 +18,13 @@ let database = firebase.database();
 
 
 //VERIFY THAT USER IS SIGNED IN //
-var user = firebase.auth().currentUser;
-
-if (user) {
-    // User is signed in
-        window.location("https://salvador1790.github.io/cloud9/home.html")
-} else {
-    // No user is signed in.
-}
+firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      window.location("https://salvador1790.github.io/cloud9/home.html")
+    } else {
+      // No user is signed in.
+    }
+  });
 
 //VERIFY THAT USER IS SIGNED IN END //
 
