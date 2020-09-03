@@ -63,4 +63,21 @@ label{
     margin: 30px auto;
 }
 
+#banner{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-size: 40px;
+    padding-left: 50px;
+}
+
+#banner h1{
+    margin: 0;
+}
+
+.homePage{
+    background-image: url("./C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG");
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
 
