@@ -20,7 +20,9 @@ let database = firebase.database();
 //VERIFY THAT USER IS SIGNED IN //
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-      window.location("https://salvador1790.github.io/cloud9/home.html")
+        
+            window.location.replace("https://salvador1790.github.io/cloud9/home.html")
+     
     } else {
       // No user is signed in.
     }
