@@ -30,6 +30,30 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 //VERIFY THAT USER IS SIGNED IN END //
 
+//CREATE A NEW USER LOG//
+
+$("#submitNewUser").on("click",function(){
+
+  let newEmail = $("#newUSer_Email").val();
+  let newPassword = $("#newUSer_password").val();
+
+  firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    
+    alert("Error : " + errorMessage);
+  });
+
+
+})
+
+
+
+
+
+//CREATE NEW USER LOGIC END//
+
 
 
 //GETS THE VALUE OF EMAIL AND PASSWORD ON CLICK ON SUBMIT BUTTON//

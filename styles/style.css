@@ -16,7 +16,7 @@ html,body{
     width: 1000px;
     height: 600px;
     border-radius: 5px;
-    margin: auto;
+    margin: 100px auto 40px;
     display: flex;
     flex-direction: row;
 }
@@ -78,6 +78,60 @@ label{
     background-image: url("./C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG");
     background-size: cover;
     background-repeat: no-repeat
+}
+
+#signUpDiv{
+    height: 580px;
+    width: 380px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+#wrapperHome{
+    display: flex;
+    height: 100%;
+}
+
+#signUp{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+}
+
+.newUserInput{
+    display: block;
+    height: 40px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#submitNewUSer{
+    display: block;
+    margin-top: 30px;
+    width: 250px;
+    background: linear-gradient(to bottom right, #E216DD, #6022D9);
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    margin: 30px auto;
+}
+
+#smoBanner{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.smoImg{
+    height: 50px;
+    margin-right: 5px;
+}
+
+#cloudLogo{
+    height: 180px;
+    display: block;
+    margin: auto;
 }
 
 
