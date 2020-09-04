@@ -24,7 +24,7 @@ firebase.auth().onAuthStateChanged(function(user) {
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
             let email_id = user.email;
-            $("#userPara").text(email_id);
+            console.log(email_id);
      
     } else {
       // No user is signed in.
