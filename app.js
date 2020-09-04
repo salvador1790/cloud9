@@ -34,8 +34,6 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 $("#submitNewUSer").on("click",function(){
 
-  alert("it works");
-
   let newEmail = $("#newUSer_Email").val();
   let newPassword = $("#newUSer_password").val();
 
