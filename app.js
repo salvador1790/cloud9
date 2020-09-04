@@ -35,7 +35,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 $("#submitNewUSer").on("click",function(){
 
   let newEmail = $("#newUSer_Email").val();
-  let newPassword = $("#newUSer_password").val();
+  let newPassword = $("#newUser_password").val();
+
+  console.log(newEmail, newPassword);
 
   firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
     // Handle Errors here.
