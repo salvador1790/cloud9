@@ -32,7 +32,9 @@ firebase.auth().onAuthStateChanged(function(user) {
 
 //CREATE A NEW USER LOG//
 
-$("#submitNewUser").on("click",function(){
+$("#submitNewUSer").on("click",function(){
+
+  alert("it works");
 
   let newEmail = $("#newUSer_Email").val();
   let newPassword = $("#newUSer_password").val();
