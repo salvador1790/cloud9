@@ -134,4 +134,8 @@ label{
     margin: auto;
 }
 
+#notLoggedIn{
+    display: none;
+}
+
 

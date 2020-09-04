@@ -22,12 +22,10 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user != null) {
         
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
-
-            let email_id = user.email;
-            console.log(email_id);
      
     } else {
-      // No user is signed in.
+      $("#wrapper").css("display","none");
+      $("#notLoggedIn").css("display","block");
     }
   });
 
