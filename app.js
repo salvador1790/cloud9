@@ -23,7 +23,7 @@ firebase.auth().onAuthStateChanged(function(user) {
 
     if (user) {
 
-      alert("logged in");
+      console.log("hello");
       
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
