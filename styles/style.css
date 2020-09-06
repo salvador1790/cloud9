@@ -165,7 +165,18 @@ label{
 }
 
 .smoIndex{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
+#createAccount{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+#signUpDiv span{
+    font-family: 'Nunito', sans-serif;
+    display: block;
+    text-align: center;
+}
 
