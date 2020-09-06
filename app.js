@@ -21,7 +21,6 @@ let database = firebase.database();
 
 firebase.auth().onAuthStateChanged(function(user) {
 
-  let user = firebase.auth().currentUser;
     if (user) {
         
       $("#wrapper").css("display","block");
