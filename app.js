@@ -22,9 +22,8 @@ let database = firebase.database();
 firebase.auth().onAuthStateChanged(function(user) {
 
     if (user) {
-        
-      $("#wrapper").css("display","block");
-      $("#notLoggedIn").hide();
+
+      alert("logged in");
       
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
