@@ -22,8 +22,6 @@ let database = firebase.database();
 firebase.auth().onAuthStateChanged(function(user) {
 
     if (user) {
-
-      console.log("hello");
       
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
