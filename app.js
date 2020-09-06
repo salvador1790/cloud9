@@ -21,13 +21,15 @@ let database = firebase.database();
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         
-      $(".homePage").css("background-image","url('./styles/C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG')")
+      $(".homePage").css("background-image","url('./styles/C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG')");
+      $("#wrapper").css("display","block");
+      $("#notLoggedIn").hide();
       
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
      
     } else {
-      $("#wrapper").css("display","none");
+    
     }
   });
 
