@@ -22,8 +22,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         
       $(".homePage").css("background-image","url('./styles/C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG')")
-      $("#message").css("display","none");
-      $("#wrapper").css("display","block");
+      
             window.location.replace("https://salvador1790.github.io/cloud9/home.html")
 
      
