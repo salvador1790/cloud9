@@ -1,14 +1,16 @@
 html,body{
     margin: 0;
-    background: linear-gradient(to bottom right, #E216DD, #35B9EF, #6022D9);
+    background-image: url("./3\ 2.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
 }
 
 #container{
     
-    height: 720px;
+    height: 100%;
     display: flex;
-    align-items: center;
+
 }
 
 #loginBox{
@@ -16,7 +18,7 @@ html,body{
     width: 1000px;
     height: 600px;
     border-radius: 5px;
-    margin: 100px auto 40px;
+    margin: auto;
     display: flex;
     flex-direction: row;
 }
@@ -75,9 +77,13 @@ label{
 }
 
 .homePage{
-    background-image: url("./C41E3BFA-875E-424A-BCFA-32FE6AC13953.PNG");
+    background-image: url("./2\ 3.PNG");
     background-size: cover;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+}
+
+#wrapper{
+    display: none;
 }
 
 #signUpDiv{
@@ -135,7 +141,31 @@ label{
 }
 
 #notLoggedIn{
-    display: none;
+    display: flex;
+    height: 100%;
+}
+
+#message{
+    border-radius: 5px;
+    background-color: white;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+#message img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.loginPara{
+    font-family: 'Nunito', sans-serif;
+}
+
+.smoIndex{
+    margin-top: 100px;
 }
 
 
