@@ -65,14 +65,12 @@ $("#loginbtn").on("click", function () {
     let email = $("#email_field").val();
     let password = $("#password_field").val();
 
-    firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-        // Handle Errors here.
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        
-        alert("Error : " + errorMessage);
-
-      });
+    firebase.auth().signInWithEmailAndPassword(email, password).then(user => {
+      // Sign in success
+      window.location = 'https://salvador1790.github.io/cloud9/home.html';
+  }).catch(error => {
+      console.error(error);
+  })
 
 })
 
