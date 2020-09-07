@@ -24,7 +24,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     // User is signed in.
     window.location.replace("https://salvador1790.github.io/cloud9/home.html");
   } else {
-    alert("please sign in");
+    
   }
 });
 
