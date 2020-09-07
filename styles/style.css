@@ -185,6 +185,7 @@ label{
 }
 
 #log_out{
+    margin-top: 50px;
     border-radius: 50%;
     font-family: 'Nunito', sans-serif;
     height: 70px;
