@@ -33,9 +33,12 @@ $("#submitNewUSer").on("click",function(){
 
   firebase.auth().createUserWithEmailAndPassword(newEmail, newPassword).catch(function(error) {
     // Handle Errors here.
-    window.location = 'https://salvador1790.github.io/cloud9/home.html';
     var errorCode = error.code;
     var errorMessage = error.message;
+
+    if(user){
+      window.location = 'https://salvador1790.github.io/cloud9/home.html';
+    }
     
     alert("Error : " + errorMessage);
   });
