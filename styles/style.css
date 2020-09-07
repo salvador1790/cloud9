@@ -180,3 +180,39 @@ label{
     text-align: center;
 }
 
+#userPara{
+    font-size: 30px;
+}
+
+#log_out{
+    border-radius: 50%;
+    font-family: 'Nunito', sans-serif;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    display: block;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+    background-color: purple;
+    color: white;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%
+    {
+        box-shadow: 0 0 0 0 rgba(255, 109, 74, 0)
+    }
+    40%{
+
+        box-shadow: 0 0 0 50px rgba(255, 109, 74, 0)
+    }
+    80%
+    {
+        box-shadow: 0 0 0 50px rgba(255, 109, 74, 0)
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(255, 109, 74, 0)
+    }
+}
