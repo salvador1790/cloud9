@@ -65,4 +65,12 @@ $("#loginbtn").on("click", function () {
 
 })
 
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    $("#notLoggedIn").css("display","none");
+  } else {
+    // No user is signed in.
+  }
+});
+
 // END//
