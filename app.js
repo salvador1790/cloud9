@@ -70,7 +70,14 @@ firebase.auth().onAuthStateChanged(function(user) {
     $("#notLoggedIn").css("display","none");
     $(".homePage").css("background-image", "url('https://i.ibb.co/LYw5gV7/C41-E3-BFA-875-E-424-A-BCFA-32-FE6-AC13953.png')");
     $("#wrapper").css("display","block");
-    $("#userPara").text(profile.email);
+    
+    var user = firebase.auth().currentUser;
+
+    if(user != null){
+      var email = user.email;
+      $("#userPara").html(email)
+    }
+
   } else {
     // No user is signed in.
   }
